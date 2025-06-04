@@ -172,7 +172,7 @@ def main():
         st.session_state["sheet_name"] = sheet_name
         st.session_state["worksheet"] = worksheet_name
         st.session_state["creds"] = "creds.json"  # Hardcoded
-        st.success("✅ Connected to Google Sheet.")
+        st.success("✅ Using developer's service account. Please ensure your sheet is shared with the service account email.")
     else:
         st.warning("⚠️ Enter your Google Sheet info to begin.")
         return
